@@ -1,0 +1,31 @@
+<div class="login-container d-flex align-items-center justify-content-center">
+    <form [formGroup]="signInForm" (ngSubmit)="addUser()" class="login-form text-center">
+        <h1 class="mb-5 font-weight-light text-uppercase "> Registration</h1>
+        <div class="form-group">
+            <input type="text" class="form-control rounded-pill form-control-md  my-2" placeholder="UserName"
+                formControlName="userName">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control rounded-pill form-control-md  my-2" placeholder="Contact"
+                formControlName="contact">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control rounded-pill form-control-md my-2" placeholder="Email"
+                formControlName="email">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control rounded-pill form-control-md  my-2" placeholder="Password"
+                formControlName="password">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control rounded-pill form-control-md  my-2" placeholder="ConfirmPassword"
+                formControlName="confirmPassword">
+        </div>
+
+        <input type="submit" value="submit" id="btn"
+            class="btn btn-costom btn-block rounded-pill btn-lg mt-3 text-uppercase login">
+
+        <p class="mt-3 font-weight-normal">Already Registerd? <a routerLink="/login"><strong>Login
+                    Now</strong></a></p>
+    </form>
+</div>

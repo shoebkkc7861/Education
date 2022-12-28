@@ -1,0 +1,20 @@
+<body>
+    <div class="container">
+        <h2 class="text-center text-light">Total Monthly Fees</h2>
+        <form [formGroup]=" monthlyFees" (ngSubmit)="addFees()" class="row bg-light">
+            <div class="form-group col-md-6 col-lg-6">
+                <label for="startDate"><b><i>startDate</i></b></label>
+                <input type="date" class="form-control" id="startDate" formControlName="startDate">
+            </div>
+
+            <div class="form-group col-md-6 col-lg-6">
+                <label for="endDate"><b><i>endDate</i></b></label>
+                <input type="date" class="form-control" id="endDate" formControlName="endDate">
+            </div>
+
+            <div class="form-group">
+                <button class="form-control btn-primary btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>

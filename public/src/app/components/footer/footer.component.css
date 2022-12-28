@@ -1,0 +1,8 @@
+p{
+    position: fixed;
+    top: 90%;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    color:rgb(111, 55, 184) ;
+}

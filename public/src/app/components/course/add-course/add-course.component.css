@@ -1,0 +1,26 @@
+.form-group{
+    margin: 10px 0; 
+}
+
+/* form{
+    border: 10px solid rgb(71, 113, 204);
+    padding: 20px;
+    border-radius: 20px; */
+    /* background-image: url("../../../../e20c260231bc119468aa13ef490d8de8.jpg"); */
+    /* background-size: cover; */
+/* } */
+
+body{
+    background-color: rgb(184, 193, 212);
+    min-height: 100vh;
+    /* background-image: url("../../../../e20c260231bc119468aa13ef490d8de8.jpg"); */
+    /* background-size: cover; */
+    background-size: cover;
+}
+
+input,select{
+    border: 1px solid rgb(28, 95, 240);
+    color: blue;
+}
+
+

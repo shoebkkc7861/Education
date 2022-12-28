@@ -1,0 +1,45 @@
+<body>
+    <div class="container text-primary ">
+        <h2 class="text-center text-light">Staff Form</h2>
+        <form class="row bg-light" [formGroup]="Staff" (ngSubmit)="addStaff()">
+            <div class="form-group" id="form">
+                <label for="userId"><b>UserName</b></label>
+                <select name="userId" id="userId" class="form-control" formControlName="userId">
+                    <option value="" disabled>Select Your UserName</option>
+                    <hr>
+                    <option *ngFor="let i of Users" value="{{i.id}}">
+                        {{i.userName}}
+                    </option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="designation"><b><i>designation</i></b></label>
+                <input type="text" class="form-control" id="designation" formControlName="designation">
+            </div>
+
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="salary"><b><i>salary</i></b></label>
+                <input type="number" class="form-control" id="salary" formControlName="salary">
+            </div>
+
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="employeCode"><b><i>employeCode</i></b></label>
+                <input type="text" class="form-control" id="employeCode" formControlName="employeCode">
+            </div>
+
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="joinDate"><b><i>Date Of Join</i></b></label>
+                <input type="date" name="" id="joinDate" class="form-control" formControlName="joinDate">
+            </div>
+
+            <div class="form-group">
+                <button class="form-control btn-primary btn">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>

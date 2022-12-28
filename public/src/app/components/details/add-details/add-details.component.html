@@ -1,0 +1,84 @@
+<div class="container">
+    <h1 class="text-center my-4">Educations Details
+    </h1>
+    <form [formGroup]="details" (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label for="userId"><b>select your UserName</b></label>
+            <select name="userId" id="userId" formControlName="userId" class="form-control" (change)="onSelect($event)">
+                <!-- <option value="">Select Name</option> -->
+                <option *ngFor="let i of data" value="{{i.id}}">
+                    {{i.userName}}
+                </option>
+            </select>
+        </div>
+
+        <!-- <div class="form-group my-4 mx-3">
+            <label for="userId">UserId</label>
+            <select name="userId" id="userId" (change)="onSelect($event)" class="form-control"
+                formControlName="userId">
+                <option value="">Select Name</option>
+                <option *ngFor="let i of data" value="{{i.userId}}">
+                    {{i.userName}}
+                </option>
+            </select>
+        </div> -->
+
+        <div formArrayName="rows">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Institute</th>
+                        <th>Organisation</th>
+                        <th>AvarageMarks</th>
+                        <th>TotalMarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let itemrow of details.controls.rows['controls'];let i=index " [formGroupName]="i">
+                        <td class="form-group">
+                            <input type="text" id="qualification{{i}}" matInput formControlName="qualification"
+                                class="form-control">
+                        </td>
+                        <td class="form-group">
+                            <input type="text" id="institute{{i}}" matInput formControlName="institute"
+                                class="form-control">
+                        </td>
+                        <td class="form-group">
+                            <input type="text" id="organisation{{i}}" matInput formControlName="organisation"
+                                class="form-control">
+                        </td>
+                        <td class="form-group">
+                            <input type="number" id="avarageMarks{{i}}" matInput formControlName="avarageMarks"
+                                class="form-control">
+                        </td>
+                        <td class="form-group">
+                            <input type="number" id="totalMarks{{i}}" matInput formControlName="totalMarks"
+                                class="form-control">
+                        </td>
+                        <!-- <td>
+                            <button *ngIf="details.controls.rows.controls.length > 1" (click)="delete(i)">
+                                <i aria-hidden="true">remove</i>
+                            </button>
+                        </td> -->
+
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <button type="button" (click)="addRow()" class="btn btn-primary">
+                                <i aria-hidden="true">+AddRow</i>
+
+                            </button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary submit">Submit</button>
+    </form>
+</div>

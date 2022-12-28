@@ -1,0 +1,19 @@
+.btn{
+    color: rgb(107, 36, 187);
+    border: 1px solid rgb(107, 36, 187);
+}
+
+.btn:hover{
+    background-color: rgb(107, 36, 187);
+    color: white;
+}
+
+.lbtn{
+    color: red;
+    border: 1px solid red;
+}
+
+.lbtn:hover{
+    background-color: red;
+    color: white;
+}

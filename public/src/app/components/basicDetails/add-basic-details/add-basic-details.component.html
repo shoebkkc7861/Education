@@ -1,0 +1,115 @@
+<body>
+    <div class="container text-primary ">
+        <h2 class="text-center text-light">Student Details Form</h2>
+        <form class="row bg-light" [formGroup]="basicDetails" (ngSubmit)="addDetails()">
+            <div class="form-group" id="form">
+                <label for="userId"><b>UserName</b></label>
+                <select name="userId" id="userId" class="form-control" formControlName="userId">
+                    <option value="" disabled>Select Your UserName</option>
+                    <hr>
+                    <option *ngFor="let i of data" value="{{i.id}}">
+                        {{i.userName}}
+                    </option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="LastName"><b><i>LastName</i></b></label>
+                <input type="text" class="form-control" id="LastName" formControlName="lastName">
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="FirstName"><b><i>FirstName</i></b></label>
+                <input type="text" class="form-control" id="FirstName" formControlName="firstName">
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="MiddleName"><i><b>MiddleName</b></i></label>
+                <input type="text" class="form-control" id="MiddleName" formControlName="middleName">
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="FatherName"><b><i>FatherName</i></b></label>
+                <input type="text" class="form-control" id="FatherName" formControlName="fatherName">
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="MotherName"><b><i>MotherName</i></b></label>
+                <input type="text" class="form-control" id="MotherName" formControlName="motherName">
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="MobileNumber"><b><i>MobileNumber</i></b></label>
+                <input type="tel" class="form-control" id="MobileNumber" value="+91 " formControlName="mobileNumber">
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="Email"><b><i>Email</i></b></label>
+                <input type="email" class="form-control" id="Email" formControlName="email">
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="Language"><b><i>Language</i></b></label>
+                <input type="text" class="form-control" id="Language" formControlName="language">
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="Gender"><b><i>Gender</i></b></label>
+                <select name="Gender" id="Gender" class="form-control" formControlName="gender">
+                    <option>Select Your Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="transGender">TransGender</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="DOB"><b><i>Date Of Birth</i></b></label>
+                <input type="date" name="" id="DOB" class="form-control" formControlName="DOB">
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="MaritalStatus"><b><i>Marital Status</i></b></label>
+                <select name="" id="MaritalStatus" class="form-control" formControlName="maritalStatus">
+                    <option value="">Select Marital Status</option>
+                    <option value="married">Married</option>
+                    <option value="unMarried">UnMarried</option>
+                    <option value="widowed">Widowed</option>
+                    <option value="Divorced">Divorced</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="Religion"><b><i>Religion</i></b></label>
+                <!-- <input type="text" class="form-control" id="Religion"> -->
+                <select name="" id="Religion" class="form-control" formControlName="religion">
+                    <option value="">Select your Religion</option>
+                    <hr>
+                    <option value="hindu">Hindu</option>
+                    <option value="islam">Islam</option>
+                    <option value="sikh">Sikh</option>
+                    <option value="christanity">Christanity</option>
+                    <option value="budh">Budh</option>
+                    <option value="jews">Jews</option>
+                    <option value="athiest">Athiest</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="Cast"><b><i>Cast</i></b></label>
+                <input type="text" class="form-control" id="Cast" formControlName="cast">
+            </div>
+
+            <div class="form-group col-md-6 col-lg-3">
+                <label for="Nationality"><b><i>Nationality</i></b></label>
+                <input type="text" id="Nationality" class="form-control" value="indian" formControlName="nationality">
+            </div>
+
+            <div class="form-group">
+                <button class="form-control btn-primary btn">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>

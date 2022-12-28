@@ -1,0 +1,21 @@
+1. parvez's token (admin=1)
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjcwNDExMjg2fQ.ae1XlJ8AsJ52D3Aa67DYKYWY1SiR-eEF6SBI3qqO76E
+
+
+2. shoeb's token(superUser=4)
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcwNDExNDA3fQ.lKwgrNY3aVP78SYIbU0uzrs4ai2imHb-k4qr0-ogK9g
+
+
+3. noor's token(moderator=2)
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNjcwNDExNDkxfQ.W4_r9hy0lJEtRwO-SVCufQ8OXldjG4meKROZG_ZPlbg
+
+4. wasim's token(staff =3)
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsImlhdCI6MTY3MDQxMTcxNH0.G-8Tw8tDIJnairKMWUf70elsaxoTx3mEKdN3XWYoo_g
+
+
+5. nadim's token (normal user)
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTksImlhdCI6MTY3MDQxMTc2OH0.QIUI-s8HaCPHuK7K-bNVrerGnFGIeJqLm42agB94Ah0
+
+
+6. parvezkhan02184
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzksImlhdCI6MTY3MTYxNjk0Nn0.S_fKs18mWgLU9b4K3x-b8ZRpDC50nJy3qs33Sgf5Mwc
