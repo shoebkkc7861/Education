@@ -1,0 +1,12 @@
+.env
+/.env
+/node_modules
+error.log
+combined.log
+package-lock.json
+package.json
+warning.log
+token.txt
+.log
+*.log
+node_modules/
