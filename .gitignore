@@ -12,4 +12,6 @@ token.txt
 node_modules/
 /Server/.env
 *.env
-/Server
+Server/.env
+/Server/.env
+./Server/.env
