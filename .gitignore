@@ -11,3 +11,5 @@ token.txt
 *.log
 node_modules/
 /Server/.env
+*.env
+/Server
