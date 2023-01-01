@@ -28,4 +28,6 @@ StaffAttendance.init({
     sequelize
 })
 
+// StaffAttendance.sync()
+
 module.exports = StaffAttendance

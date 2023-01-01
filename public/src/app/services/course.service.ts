@@ -17,7 +17,10 @@ export class CourseService {
 
 
   addCourse(addCourse: AddCourse): Observable<any> {
-    return this.http.post(`${this.myAppUrl}${this.myApiUrl}/addCourse`, addCourse)
+    let header = {
+      'x-auth-token':""+localStorage.getItem("x-auth-token")
+    }
+    return this.http.post(`${this.myAppUrl}${this.myApiUrl}/addCourse`, addCourse,{headers:header})
   }
 
 

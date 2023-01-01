@@ -45,7 +45,7 @@ Experience.init({
     sequelize
 })
 
-// experience.sync({ force: true })
+// Experience.sync({ force: true })
 
 
 module.exports = Experience

@@ -52,6 +52,6 @@ Assignment.init({
     sequelize
 })
 
-//assigemnet.sync({ force: true })
+// Assignment.sync({ force: true })
 
 module.exports = Assignment

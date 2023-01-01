@@ -1,0 +1,9 @@
+.env
+/node_modules
+combined.log
+error.log
+package-lock.json
+package.json
+token.txt
+warning.log
+.log

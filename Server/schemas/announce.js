@@ -52,5 +52,6 @@ Announce.init({
     sequelize
 })
 
+// Announce.sync()
 
 module.exports = Announce

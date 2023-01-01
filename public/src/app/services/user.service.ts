@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient ,HttpHeaders} from '@angular/common/http';
 import { environment } from '../../environments/environment'
 import { Observable } from 'rxjs';
 import { signIn, Login } from '../interfaces/user';
@@ -21,14 +21,23 @@ export class UserService {
   }
 
   Login(log: Login): Observable<any> {
+    
     return this.http.post(`${this.myAppUrl}${this.myApiUrl}/login`, log)
   }
 
 
-  getUser() {
-    return this.http.get(`${this.myAppUrl}/user/getUsers`)
+  getUser():Observable<any> {
+    let header = {
+      'x-auth-token':""+localStorage.getItem("x-auth-token")
+    }
+    return this.http.get(`${this.myAppUrl}/user/getUsers`,{headers:header})
   }
 
+  getToken(){
+    let headers = {
+      'x-auth-token':localStorage.getItem("x-auth-token")
+    }
+  }
 
 }
 

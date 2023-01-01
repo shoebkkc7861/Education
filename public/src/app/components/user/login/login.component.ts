@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
       next: (token) => {
         console.log("login successfull")
         localStorage.setItem('x-auth-token', token)
-        let get = localStorage.getItem("token")
+        let get = localStorage.getItem("x-auth-token")
         console.log("get", get)
       }
     })
