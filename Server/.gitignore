@@ -1,9 +1,12 @@
 .env
+/.env
 /node_modules
-combined.log
 error.log
+combined.log
 package-lock.json
 package.json
-token.txt
 warning.log
+token.txt
 .log
+*.log
+node_modules/
